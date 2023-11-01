@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kişiler</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <h1 class="rehber">REHBER</h1>
+    
+    <p>Lütfen aramak istediğiniz kişinin ismini yazınız</p>
+    <div id="searchdiv">
+    <i class="bi bi-search"></i>
+    <input type="text" id="searchinput" placeholder="Arama" oninput="kisiyibul()">
+    
+    </div>
+<button class="tumliste" onclick="tumliste()">Tüm Rehberi Listele</button>
+
+    <div id="personinput">
+        <h1>Yeni Kayıt</h1>
+        <input type="text" id="ad" placeholder="Ad">
+        <input type="text" id="soyad" placeholder="Soyad">
+        <input type="text" id="telno" placeholder="Tel No">
+        <button class="add">Yeni Kayıt Ekle</button>
+        <i class="bi bi-x-square-fill close"></i>
+    </div>
+
+    <i class="bi bi-plus-circle-fill addnew"></i>
+  
+    
+    <div id="sonucdiv">
+        <ul id="kisiListesi"></ul>
+    </div>
+
+</body>
+</html>
